@@ -50,7 +50,7 @@ body {
 #index-div-one,
 #index-div-two,
 #index-div-three {
-    display: inline-block;
+    display: block;
     min-width: 260px;
     max-width: fit-content;
     background: #fff;
@@ -59,7 +59,8 @@ body {
     box-shadow: 0 4px 16px rgba(79, 140, 255, 0.10);
     border-radius: 16px;
     padding: 28px 24px;
-    margin: 24px 16px;
+    margin: auto auto;
+    margin-bottom: 3%;
     text-align: center;
     transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -74,6 +75,10 @@ body {
 #index-div-two ul {
     padding-left: 22px;
     padding-right: 22px;
+}
+
+#index-div-three {
+        margin-bottom: 10%;
 }
 
 @media (max-width: 700px) {
@@ -91,6 +96,12 @@ body {
     }
 }
 
+.index-image, .PersonalBio {
+   display: inline-block;
+   margin: auto;
+   padding: 10px;
+}
+
 .tutor-table {
     margin: 0 auto;
     text-align: center;
@@ -102,6 +113,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     font-size: 1.05rem;
+
 }
 
 .tutor-table th, 
@@ -161,3 +173,22 @@ body {
     box-shadow: 0 1px 4px rgba(79, 140, 255, 0.10);
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 0;
+    background: #f1f1f1;
+    color: #333;
+    font-size: 0.9rem;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 -2px 8px rgba(79, 140, 255, 0.08);
+}
+
+ul{
+    list-style-position: inside;
+    text-align: center;
+}
