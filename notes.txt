@@ -4,3 +4,6 @@ Red and Dark Blue or Red and Black.
 Bio:
 
 Brag Sheet:
+
+
+Fix CSS issue(s) in Sujects folder!
