@@ -49,7 +49,9 @@ body {
 
 #index-div-one,
 #index-div-two,
-#index-div-three {
+#index-div-three,
+#ContactsDiv,
+#PricingDiv {
     display: block;
     min-width: 260px;
     max-width: fit-content;
@@ -67,7 +69,9 @@ body {
 
 #index-div-one:hover,
 #index-div-two:hover,
-#index-div-three:hover {
+#index-div-three:hover,
+#ContactsDiv:hover,
+#PricingDiv:hover {
     box-shadow: 0 8px 32px rgba(79, 140, 255, 0.18);
     transform: translateY(-4px) scale(1.03);
 }
