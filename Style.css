@@ -100,7 +100,7 @@ body {
     }
 }
 
-.index-image, .PersonalBio {
+.PersonalBio {
    display: inline-block;
    margin: auto;
    padding: 10px;
