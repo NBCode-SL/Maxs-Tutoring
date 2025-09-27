@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-
+    min-height: 100vh;
 }
 
 .header {
@@ -16,9 +16,9 @@ body {
     background: linear-gradient(90deg, #e42911 0%, #c41616 100%);
     color: #fff;
     text-align: center;
-    padding: 40px 0 30px 0;
-    margin-bottom: 30px;
-    border-radius: 0 0 30px 30px;
+    padding: 3vw 0 2vw 0;
+    margin-bottom: 2vw;
+    border-radius: 0 0 2vw 2vw;
     box-shadow: 0 4px 16px rgba(79, 140, 255, 0.15);
     letter-spacing: 2px;
     position: relative;
@@ -32,8 +32,10 @@ body {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
+    width: 8vw;
+    max-width: 80px;
+    height: 0.4vw;
+    max-height: 4px;
     background: #fff;
     border-radius: 2px;
     opacity: 0.5;
@@ -53,16 +55,15 @@ body {
 #ContactsDiv,
 #PricingDiv {
     display: block;
-    min-width: 260px;
-    max-width: fit-content;
+    min-width: 220px;
+    max-width: 95vw;
     background: #fff;
     border: none;
-    border: black 5px solid;
+    border: black 0.3em solid;
     box-shadow: 0 4px 16px rgba(79, 140, 255, 0.10);
-    border-radius: 16px;
-    padding: 28px 24px;
-    margin: auto auto;
-    margin-bottom: 3%;
+    border-radius: 1em;
+    padding: 2em 1.5em;
+    margin: 2vw auto 3vw auto;
     text-align: center;
     transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -77,33 +78,67 @@ body {
 }
 
 #index-div-two ul {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 #index-div-three {
-        margin-bottom: 10%;
+    margin-bottom: 10vw;
+}
+
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+    #index-div-one,
+    #index-div-two,
+    #index-div-three,
+    #ContactsDiv,
+    #PricingDiv {
+        padding: 1.5em 1em;
+    }
 }
 
 @media (max-width: 700px) {
     #index-div-one,
     #index-div-two,
-    #index-div-three {
-        display: block;
+    #index-div-three,
+    #ContactsDiv,
+    #PricingDiv {
         margin: 18px auto;
-        width: 90%;
-        max-width: 98vw;
-        padding: 18px 8px;
+        width: 98vw;
+        max-width: 100vw;
+        padding: 1em 0.5em;
     }
     .header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .header {
+        padding: 6vw 0 4vw 0;
+        border-radius: 0 0 6vw 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.1rem;
+    }
+    #index-div-one,
+    #index-div-two,
+    #index-div-three,
+    #ContactsDiv,
+    #PricingDiv {
+        padding: 0.7em 0.2em;
+        font-size: 0.98rem;
     }
 }
 
 .PersonalBio {
-   display: inline-block;
-   margin: auto;
-   padding: 10px;
+    display: inline-block;
+    margin: auto;
+    padding: 0.7em;
+    max-width: 98vw;
+    word-break: break-word;
 }
 
 .tutor-table {
@@ -111,26 +146,28 @@ body {
     text-align: center;
     border-collapse: separate;
     border-spacing: 0;
-    min-width: 350px;
+    min-width: 220px;
+    width: 100%;
+    max-width: 98vw;
     box-shadow: 0 4px 16px rgba(79, 140, 255, 0.10);
     background: #fff;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: auto;
     font-size: 1.05rem;
-
 }
 
 .tutor-table th, 
 .tutor-table td {
-    padding: 14px 18px;
+    padding: 0.8em 0.5em;
     border-bottom: 1px solid #e0e0e0;
+    word-break: break-word;
 }
 
 .tutor-table th {
     background: linear-gradient(90deg, #e42911 0%, #c41616 100%);
     color: #fff;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     letter-spacing: 1px;
     border-bottom: 3px solid #c41616;
 }
@@ -150,12 +187,12 @@ body {
 
 .Contacts button,
 .HomePage button {
-    padding: 12px 32px;
-    font-size: 1.2rem;
+    padding: 0.7em 2em;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
     background: linear-gradient(90deg, #e42911 0%, #c41616 100%);
-    border: black 5px solid;
+    border: black 0.3em solid;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(79, 140, 255, 0.10);
     cursor: pointer;
@@ -181,9 +218,9 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     margin-top: 0;
-    padding: 20px 0;
+    padding: 1em 0;
     background: #f1f1f1;
     color: #333;
     font-size: 0.9rem;
@@ -192,7 +229,27 @@ footer {
     box-shadow: 0 -2px 8px rgba(79, 140, 255, 0.08);
 }
 
-ul{
+@media (max-width: 700px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 0.7em 0;
+    }
+}
+
+ul {
     list-style-position: inside;
     text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    word-break: break-word;
 }
+ 
+#index-div-two {
+    background: linear-gradient(120deg, #fff7f7 0%, #ffeaea 100%);
+    border: 2px solid #e42911;
+    box-shadow: 0 6px 24px rgba(228, 41, 17, 0.08);
+    border-radius: 1.5em;
+    padding: 2.5em 2em;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
